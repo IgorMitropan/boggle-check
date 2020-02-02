@@ -1,0 +1,10 @@
+##############
+# JS modules
+node_modules/
+
+##############
+# Editor config
+#
+.brackets.json
+.idea/
+.vscode/
