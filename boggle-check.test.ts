@@ -1,5 +1,5 @@
-const BoggleChecker = require('./boggle-check');
-const mockData = require('./boggle.mock');
+import BoggleChecker from './boggle-check';
+import mockData from './boggle.mock';
 
 
 describe('FEATURE: Testing functionality for BoggleChecker', () => {
@@ -17,7 +17,7 @@ describe('FEATURE: Testing functionality for BoggleChecker', () => {
     describe('FEATURE: BoggleChecker 4x4 matrix', () => {
         const boggleChecker = new BoggleChecker(mockData.smallMatrixMock.boggle);
         describe('WHEN: calling checkWord method for valid guesses', () => {
-            mockData.smallMatrixMock.validGuesses.forEach(word => {
+            mockData.smallMatrixMock.validGuesses.forEach((word: string) => {
                 it(`THEN: should return true for ${word}`, () => {
                     expect(boggleChecker.checkWord(word)).toBeTruthy;
                 });
@@ -25,7 +25,7 @@ describe('FEATURE: Testing functionality for BoggleChecker', () => {
         });
 
         describe('WHEN: calling checkWord method for invalid guesses', () => {
-            mockData.smallMatrixMock.invalidGuesses.forEach(word => {
+            mockData.smallMatrixMock.invalidGuesses.forEach((word: string) => {
                 it(`THEN: should return false for ${word}`, () => {
                     expect(boggleChecker.checkWord(word)).toBeFalsy;
                 });
@@ -36,7 +36,7 @@ describe('FEATURE: Testing functionality for BoggleChecker', () => {
     describe('FEATURE: BoggleChecker 10x5 matrix', () => {
         const boggleChecker = new BoggleChecker(mockData.bigMatrixMock.boggle);
         describe('WHEN: calling checkWord method for valid guesses', () => {
-            mockData.bigMatrixMock.validGuesses.forEach(word => {
+            mockData.bigMatrixMock.validGuesses.forEach((word: string) => {
                 it(`THEN: should return true for ${word}`, () => {
                     expect(boggleChecker.checkWord(word)).toBeTruthy;
                 });
@@ -44,7 +44,7 @@ describe('FEATURE: Testing functionality for BoggleChecker', () => {
         });
 
         describe('WHEN: calling checkWord method for invalid guesses', () => {
-            mockData.bigMatrixMock.invalidGuesses.forEach(word => {
+            mockData.bigMatrixMock.invalidGuesses.forEach((word: string) => {
                 it(`THEN: should return false for ${word}`, () => {
                     expect(boggleChecker.checkWord(word)).toBeFalsy;
                 });

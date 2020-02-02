@@ -1,4 +1,10 @@
-const smallMatrixMock = {
+interface IBoggleMock {
+    boggle: string[][];
+    validGuesses: string[];
+    invalidGuesses: string[];
+}
+
+const smallMatrixMock: IBoggleMock = {
     boggle: [
         [ 'I', 'L', 'A', 'W'],
         [ 'B', 'N', 'G', 'E'],
@@ -17,7 +23,7 @@ const smallMatrixMock = {
     ]
 };
 
-const bigMatrixMock = {
+const bigMatrixMock: IBoggleMock = {
     boggle: [
         [ 'I', 'L', 'A', 'W', 'H', 'B', 'A', 'W', 'A', 'J'],
         [ 'B', 'N', 'G', 'E', 'R', 'T', 'A', 'G', 'F', 'K'],
@@ -37,7 +43,7 @@ const bigMatrixMock = {
     ]
 };
 
-module.exports = {
+export = {
     smallMatrixMock,
     bigMatrixMock
 };

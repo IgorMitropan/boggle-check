@@ -2,17 +2,22 @@
   "name": "boggle-checker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest --testRegex=./*.test.js --verbose"
+    "start": "ts-node index.ts",
+    "test": "jest --testRegex=./*.test.ts --verbose"
   },
-  "keywords": ["boggle"],
+  "keywords": [
+    "boggle"
+  ],
   "author": "Igor Mytropan",
   "license": "ISC",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "jest": "24.8.0"
+    "@types/jest": "25.1.1",
+    "jest": "25.1.0",
+    "ts-jest": "25.1.0",
+    "ts-node": "8.6.2",
+    "typescript": "3.7.5"
   }
 }

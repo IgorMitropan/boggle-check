@@ -20,6 +20,9 @@ Test cases will provide various array and string sizes (squared arrays up to 150
 ## Solution 
 It is based on the recursive algorithm and has its limits
 
+## Preconditions
+* `npm i` - install node modules first
+
 ## How to run
-* `npm start` - runs index.js file
-* `npm i` and then `npm run test` - runs unit tests through Jest
+* `npm start` - runs index.ts file
+* `npm run test` - runs unit tests through TS-Jest

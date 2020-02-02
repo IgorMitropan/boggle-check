@@ -1,7 +1,6 @@
-const BoggleChecker = require('./boggle-check');
+import BoggleChecker from "./boggle-check";
 
-
-const boggleChecker = new BoggleChecker(
+const boggleChecker: BoggleChecker = new BoggleChecker(
     [
         [ 'I', 'L', 'A', 'W'],
         [ 'B', 'N', 'G', 'E'],
